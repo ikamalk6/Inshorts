@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     width: 75,
     alignItems: 'center',
-    padding: 10,
+    padding: 7,
     paddingHorizontal: 9,
     borderRadius: 20,
     position: 'absolute',
@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 320,
+    marginBottom: 10,
   },
   heading: {
     fontWeight: '400',
