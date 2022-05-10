@@ -38,7 +38,7 @@ const TopNavigation = ({index, setIndex}) => {
           <TouchableOpacity
             style={styles.right}
             // onPress={() => fetchNews('general')}
-            onPress={() => navigation.navigate('NewsScreen')}>
+            onPress={() => navigation.replace('Inshorts')}>
             <Image
               style={styles.reloadi}
               source={require('./image/reload.png')}

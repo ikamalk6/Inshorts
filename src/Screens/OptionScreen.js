@@ -62,7 +62,7 @@ export default function OptionScreen({navigation}) {
         </View>
         <View>
           <View style={styles.section2}>
-            <Text style={styles.lang}>{'Language'}</Text>
+            <Text style={styles.text}>{'Language'}</Text>
             <TouchableOpacity
               onPress={() => {
                 setVisible(true);
@@ -73,7 +73,7 @@ export default function OptionScreen({navigation}) {
         </View>
         <View>
           <View style={styles.section2}>
-            <Text>{'Notifications'}</Text>
+            <Text style={styles.text}>{'Notifications'}</Text>
             <Switch
               trackColor={{false: '#767577', true: '#81b0ff'}}
               //   thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
@@ -85,7 +85,7 @@ export default function OptionScreen({navigation}) {
         </View>
         <View>
           <View style={styles.section2}>
-            <Text>{'HD Images'}</Text>
+            <Text style={styles.text}> {'HD Images'}</Text>
             <Switch
               trackColor={{false: '#767577', true: '#81b0ff'}}
               //   thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
@@ -97,7 +97,7 @@ export default function OptionScreen({navigation}) {
         </View>
         <View>
           <View style={styles.section2}>
-            <Text>{'Night Mode'}</Text>
+            <Text style={styles.text}>{'Night Mode'}</Text>
             <Switch
               trackColor={{false: '#767577', true: '#81b0ff'}}
               //   thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
@@ -190,12 +190,13 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     justifyContent: 'space-between',
     borderBottomColor: 'lightgrey',
-    margin: 20,
+    margin: 10,
+    paddingVertical: 10,
     // alignItems: 'center',
     // padding: 10,
   },
-  lang: {
-    fontSize: 16,
+  text: {
+    fontSize: 18,
   },
   language: {
     fontSize: 20,
